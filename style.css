@@ -1,0 +1,81 @@
+/* 1. General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  /* 2. Header & Logo Styling*/
+  .header .logo {
+    font-family: 'Pacifico', cursive;
+  }
+  
+  /* 3. Icon Styling (Remix Icon)*/
+  :where([class^="ri-"])::before {
+    content: "\f3c2";
+  }
+  
+  /* 4. Modal Styling */
+  .modal {
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  /* 5. Form & Input Styling */
+  input[type="text"],
+  input[type="email"] {
+    outline: none;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  /* Menghilangkan tombol spinner pada input number (Chrome/Safari) */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* 6. Article Content Styling*/
+  .article-content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .article-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .article-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+  }
+  
+  .article-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 7. Button Styling */
+  /* Tombol dalam kondisi aktif */
+  button.active {
+    background-color: #2563eb;
+    border-color: #2563eb;
+  }
+  
+  /* Hover effect untuk tombol layanan */
+  button.layanan:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+  }
+  
+  /* 8. Navbar Active Link Styling*/
+  nav a.active-link {
+    color: #3b82f6;         
+    font-weight: 500;       
+  }

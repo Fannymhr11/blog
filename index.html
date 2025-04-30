@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Artikel Terbaru</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#64748b'
+          },
+          borderRadius: {
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 font-[Poppins]">
+  <!-- Header -->
+  <header class="header bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="logo text-primary font-bold text-2xl">Fanny's Blog</a>
+      <nav class="hidden md:flex gap-6 text-secondary">
+        <a href="#hero">Beranda</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#tentang-kami">Tentang Kami</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="relative hidden md:block">
+          <input type="text" placeholder="Cari artikel..." class="px-4 py-2 border rounded-full w-48">
+          <i class="ri-search-line absolute top-2.5 right-3 text-gray-400"></i>
+        </div>
+        <button id="subscribeBtn" class="bg-primary text-white px-4 py-2 rounded-button">Berlangganan</button>
+        <div class="md:hidden">
+          <button id="hamburgerBtn">
+            <i class="ri-menu-line text-2xl text-gray-700"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="bg-blue-100 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl font-bold mb-2">Blog Posts</h1>
+      <p class="text-secondary mb-4">Temukan artikel terbaru dan wawasan menarik di blog kami</p>
+      <div class="text-sm text-gray-500">
+        <a href="#" class="hover:underline">Beranda</a> / <span>Blog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Artikel 1 -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden flex flex-col">
+        <div class="relative">
+          <img src="/images/Produktivitas.jpg" alt="Produktivitas" class="w-full h-56 object-cover rounded-t-2xl">
+          <span class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">Produktivitas</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="text-xs text-gray-500 flex items-center gap-4 mb-2">
+            <span class="flex items-center gap-1"><i class="ri-calendar-line"></i> 26 April 2025</span>
+            <span class="flex items-center gap-1"><i class="ri-user-line"></i> Dewi Pratiwi</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-3 leading-snug">
+            3 Strategi Efektif untuk Meningkatkan Produktivitas di Tempat Kerja
+          </h3>
+          <p class="text-sm text-gray-600 mb-4 flex-grow">
+            Pelajari bagaimana teknik Pomodoro, Matriks Eisenhower, dan fokus kerja dapat meningkatkan produktivitas Anda di dunia kerja modern.
+          </p>
+          <a href="artikel1.html" class="text-primary text-sm font-medium hover:underline mt-auto">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+      <!-- Artikel 2 -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden flex flex-col">
+        <div class="relative">
+          <img src="/images/Digital Marketing.jpg" alt="Marketing" class="w-full h-56 object-cover rounded-t-2xl">
+          <span class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">Marketing</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="text-xs text-gray-500 flex items-center gap-4 mb-2">
+            <span class="flex items-center gap-1"><i class="ri-calendar-line"></i> 26 April 2025</span>
+            <span class="flex items-center gap-1"><i class="ri-user-line"></i> Budi Santoso</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-3 leading-snug">
+            Apa itu Digital Marketing?
+          </h3>
+          <p class="text-sm text-gray-600 mb-4 flex-grow">
+            Memahami konsep digital marketing, komponen utamanya, manfaat, serta tantangan yang dihadapi di era serba digital ini.
+          </p>
+          <a href="artikel1.html" class="text-primary text-sm font-medium hover:underline mt-auto">Baca Selengkapnya →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang-kami" class="bg-blue-100 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Tentang Kami</h2>
+      <p class="text-secondary max-w-2xl mx-auto">
+        Fanny's Blog adalah platform berbagi pengetahuan dan inspirasi seputar produktivitas, karir, teknologi, dan pemasaran digital.
+        Kami berdedikasi untuk menyediakan konten berkualitas yang membantu pembaca berkembang secara pribadi dan profesional.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">Fanny's Blog</a>
+          <p class="text-gray-400 mb-6">Sumber inspirasi dan wawasan terbaik untuk karir dan kehidupan Anda.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700">
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kategori</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">Produktivitas</a></li>
+            <li><a href="#" class="hover:text-white">Marketing</a></li>
+            <li><a href="#" class="hover:text-white">Teknologi</a></li>
+            <li><a href="#" class="hover:text-white">Karir</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Tautan</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#hero" class="hover:text-white">Beranda</a></li>
+            <li><a href="#blog" class="hover:text-white">Artikel</a></li>
+            <li><a href="#tentang-kami" class="hover:text-white">Tentang Kami</a></li>
+            <li><a href="#kontak" class="hover:text-white">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Berlangganan</h3>
+          <p class="text-gray-400 mb-4">Dapatkan artikel terbaru langsung ke inbox Anda.</p>
+          <form>
+            <input type="email" placeholder="Email Anda" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 mb-3">
+            <button type="submit" class="w-full bg-primary py-2 rounded-button">Langganan</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+        <p>© 2025 Fanny's Blog. Semua hak cipta dilindungi.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white">Syarat</a>
+          <a href="#" class="hover:text-white">Privasi</a>
+          <a href="#" class="hover:text-white">Cookie</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
